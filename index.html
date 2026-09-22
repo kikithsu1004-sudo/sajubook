@@ -124,6 +124,18 @@
   @media (max-width:720px){ .sticky{display:block} body{padding-bottom:84px} .hero h1{font-size:32px} .palja .ch{font-size:28px} }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
 </style>
+<!-- Meta Pixel: 아래 1075319132021840 두 곳을 이벤트 관리자의 픽셀 ID(숫자)로 바꾸세요 -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1075319132021840');
+fbq('track','PageView');
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('a.cta').forEach(function(a){
+    a.addEventListener('click',function(){fbq('track','InitiateCheckout',{content_name:'saju-ebook',value:19900,currency:'KRW'});});
+  });
+});
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1075319132021840&ev=PageView&noscript=1"/></noscript>
 </head>
 <body>
 
